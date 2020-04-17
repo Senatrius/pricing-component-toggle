@@ -15,7 +15,7 @@
     position: absolute;
     content: '';
     display: block;
-    border-radius: 50px;
+    border-radius: 3.33rem;
     width: 24px;
     height: 24px;
     top: 3px;
@@ -40,7 +40,7 @@
   text-transform: uppercase;
   text-decoration: none;
   margin-top: 32px;
-  border-radius: 6px;
+  border-radius: 0.4rem;
 
   &--filled {
     color: white;
@@ -50,7 +50,7 @@
       padding: 13px;
       background: none;
       color: hsl(237, 63%, 64%);
-      border: 2px solid $grayish-blue;
+      border: 0.15rem solid $grayish-blue;
     }
   }
 
@@ -62,7 +62,7 @@
       padding: 13px;
       background: none;
       color: white;
-      border: 2px solid white;
+      border: 0.15rem solid white;
     }
   }
 }
