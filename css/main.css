@@ -113,8 +113,8 @@ input[type="checkbox"] {
 }
 
 .title {
-  font-size: 32px;
-  margin: 70px 0 40px;
+  font-size: 1.87rem;
+  margin: 4.67rem 0 2.67rem;
   color: #6d708d;
 }
 
@@ -125,7 +125,7 @@ input[type="checkbox"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 5.2rem;
 }
 
 .toggle .term {
@@ -144,19 +144,20 @@ input[type="checkbox"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 2.67rem;
+  margin: 0 auto;
 }
 
 .pricing .card {
   width: 100%;
-  padding: 30px;
+  padding: 2rem;
   text-align: center;
   background: white;
   color: #494c5f;
-  -webkit-box-shadow: 0 10px 20px rgba(179, 181, 198, 0.1);
-          box-shadow: 0 10px 20px rgba(179, 181, 198, 0.1);
-  border-radius: 10px;
-  margin-bottom: 30px;
+  -webkit-box-shadow: 0 0.67rem 1.33rem rgba(179, 181, 198, 0.1);
+          box-shadow: 0 0.67rem 1.33rem rgba(179, 181, 198, 0.1);
+  border-radius: 0.67rem;
+  margin-bottom: 2rem;
 }
 
 .pricing .card__professional {
@@ -173,12 +174,12 @@ input[type="checkbox"] {
 }
 
 .pricing .card .dollar {
-  font-size: 38px;
-  margin-right: 8px;
+  font-size: 2.53rem;
+  margin-right: 0.53rem;
 }
 
 .pricing .card__title {
-  font-size: 16px;
+  font-size: 1.05rem;
   color: #6d708d;
 }
 
@@ -192,8 +193,8 @@ input[type="checkbox"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 72px;
-  margin: 20px 0 24px;
+  font-size: 4.8rem;
+  margin: 1.33rem 0 1.6rem;
   letter-spacing: -2px;
 }
 
@@ -204,12 +205,57 @@ input[type="checkbox"] {
 
 .pricing .card .feature {
   display: block;
-  padding: 20px;
+  padding: 1.33rem;
   border-top: 1px solid #b3b5c6;
   width: 100%;
 }
 
 .pricing .card .feature:last-child {
   border-bottom: 1px solid #b3b5c6;
+}
+
+@media screen and (min-width: 767px) {
+  body {
+    background: url("../images/bg-top.svg") no-repeat top -35px right -210px, url("../images/bg-bottom.svg") no-repeat bottom left, #f6f6fe;
+  }
+  .wrapper {
+    width: 80%;
+  }
+  .toggle {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  body {
+    background: url("../images/bg-top.svg") no-repeat top right, url("../images/bg-bottom.svg") no-repeat bottom left, #f6f6fe;
+  }
+  .wrapper {
+    width: 73%;
+  }
+  .pricing {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pricing .card {
+    max-width: 23.33rem;
+    margin-bottom: 0;
+  }
+  .pricing .card__basic {
+    border-radius: 0.67rem 0 0 0.67rem;
+  }
+  .pricing .card__professional {
+    background: linear-gradient(135deg, #a3a8f0, #696fdd);
+    color: white;
+    padding: 3.6rem 2rem;
+  }
+  .pricing .card__master {
+    border-radius: 0 0.67rem 0.67rem 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

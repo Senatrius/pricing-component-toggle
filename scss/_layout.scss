@@ -13,20 +13,20 @@ input[type="checkbox"] {
   flex-direction: column;
   align-items: center;
   max-width: 1440px;
-  width: 86.5%;
+  width: $mobile-wrapper;
   margin: 0 auto;
 }
 
 .title {
-  font-size: 32px;
-  margin: 70px 0 40px;
+  font-size: 1.87rem;
+  margin: 4.67rem 0 2.67rem;
   color: $grayish-blue;
 }
 
 .toggle {
   display: flex;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 5.2rem;
 
   .term {
     color: $light-grayish-blue;
@@ -38,17 +38,18 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 2.67rem;
+  margin: 0 auto;
 
   .card {
     width: 100%;
-    padding: 30px;
+    padding: 2rem;
     text-align: center;
     background: white;
     color: $dark-grayish-blue;
-    box-shadow: 0 10px 20px rgba($light-grayish-blue, .1);
-    border-radius: 10px;
-    margin-bottom: 30px;
+    box-shadow: 0 0.67rem 1.33rem rgba($light-grayish-blue, .1);
+    border-radius: 0.67rem;
+    margin-bottom: 2rem;
 
     &__professional {
       background: linear-gradient(135deg, $gradient);
@@ -64,12 +65,12 @@ input[type="checkbox"] {
     }
 
     .dollar {
-      font-size: 38px;
-      margin-right: 8px;
+      font-size: 2.53rem;
+      margin-right: 0.53rem;
     }
 
     &__title {
-      font-size: 16px;
+      font-size: 1.05rem;
       color: $grayish-blue;
     }
 
@@ -77,8 +78,8 @@ input[type="checkbox"] {
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 72px;
-      margin: 20px 0 24px;
+      font-size: 4.8rem;
+      margin: 1.33rem 0 1.6rem;
       letter-spacing: -2px;
     }
 
@@ -89,12 +90,60 @@ input[type="checkbox"] {
 
     .feature {
       display: block;
-      padding: 20px;
+      padding: 1.33rem;
       border-top: 1px solid $light-grayish-blue;
       width: 100%;
 
       &:last-child {
         border-bottom: 1px solid $light-grayish-blue;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  body {
+    background: url('../images/bg-top.svg') no-repeat top -35px right -210px, url('../images/bg-bottom.svg') no-repeat bottom left, $very-light-grayish-blue;
+  }
+
+  .wrapper {
+    width: $tablet-wrapper;
+  }
+
+  .toggle {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  body {
+    background: url('../images/bg-top.svg') no-repeat top right, url('../images/bg-bottom.svg') no-repeat bottom left, $very-light-grayish-blue;
+  }
+
+  .wrapper {
+    width: $desktop-wrapper;
+  }
+
+  .pricing {
+    flex-direction: row;
+    justify-content: center;
+
+    .card {
+      max-width: 23.33rem;
+      margin-bottom: 0;
+
+      &__basic {
+        border-radius: 0.67rem 0 0 0.67rem;
+      }
+
+      &__professional {
+        background: linear-gradient(135deg, $gradient);
+        color: white;
+        padding: 3.6rem 2rem;
+      }
+
+      &__master {
+        border-radius: 0 0.67rem 0.67rem 0;
       }
     }
   }
