@@ -1,0 +1,101 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background: url('../images/bg-top.svg') no-repeat top -35px right -210px, $very-light-grayish-blue;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  width: 86.5%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 32px;
+  margin: 70px 0 40px;
+  color: $grayish-blue;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+
+  .term {
+    color: $light-grayish-blue;
+  }
+}
+
+.pricing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+
+  .card {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    color: $dark-grayish-blue;
+    box-shadow: 0 10px 20px rgba($light-grayish-blue, .1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    &__professional {
+      background: linear-gradient(135deg, $gradient);
+      color: white;
+
+      .card__title {
+        color: white;
+      }
+
+      .card__features {
+        color: white;
+      }
+    }
+
+    .dollar {
+      font-size: 38px;
+      margin-right: 8px;
+    }
+
+    &__title {
+      font-size: 16px;
+      color: $grayish-blue;
+    }
+
+    &__price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 72px;
+      margin: 20px 0 24px;
+      letter-spacing: -2px;
+    }
+
+    &__features {
+      font-size: inherit;
+      color: $grayish-blue;
+    }
+
+    .feature {
+      display: block;
+      padding: 20px;
+      border-top: 1px solid $light-grayish-blue;
+      width: 100%;
+
+      &:last-child {
+        border-bottom: 1px solid $light-grayish-blue;
+      }
+    }
+  }
+}

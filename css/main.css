@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.switch {
+  width: 55px;
+  height: 30px;
+  margin: 0 23px;
+  border-radius: 100px;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+  position: relative;
+  cursor: pointer;
+}
+
+.switch:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#cfd1f7), to(#9397e6));
+  background: linear-gradient(90deg, #cfd1f7, #9397e6);
+}
+
+.switch::before {
+  position: absolute;
+  content: '';
+  display: block;
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+  top: 3px;
+  right: 3px;
+  background: white;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.switch:checked::before {
+  -webkit-transform: translateX(-25px);
+          transform: translateX(-25px);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 32px;
+  border-radius: 6px;
+}
+
+.btn--filled {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+}
+
+.btn--filled:hover, .btn--filled:focus {
+  padding: 13px;
+  background: none;
+  color: #696fdd;
+  border: 2px solid #6d708d;
+}
+
+.btn--white {
+  color: #696fdd;
+  background: white;
+}
+
+.btn--white:hover, .btn--white:focus {
+  padding: 13px;
+  background: none;
+  color: white;
+  border: 2px solid white;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/bg-top.svg") no-repeat top -35px right -210px, #f6f6fe;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1440px;
+  width: 86.5%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 32px;
+  margin: 70px 0 40px;
+  color: #6d708d;
+}
+
+.toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+
+.toggle .term {
+  color: #b3b5c6;
+}
+
+.pricing {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.pricing .card {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  background: white;
+  color: #494c5f;
+  -webkit-box-shadow: 0 10px 20px rgba(179, 181, 198, 0.1);
+          box-shadow: 0 10px 20px rgba(179, 181, 198, 0.1);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.pricing .card__professional {
+  background: linear-gradient(135deg, #a3a8f0, #696fdd);
+  color: white;
+}
+
+.pricing .card__professional .card__title {
+  color: white;
+}
+
+.pricing .card__professional .card__features {
+  color: white;
+}
+
+.pricing .card .dollar {
+  font-size: 38px;
+  margin-right: 8px;
+}
+
+.pricing .card__title {
+  font-size: 16px;
+  color: #6d708d;
+}
+
+.pricing .card__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 72px;
+  margin: 20px 0 24px;
+  letter-spacing: -2px;
+}
+
+.pricing .card__features {
+  font-size: inherit;
+  color: #6d708d;
+}
+
+.pricing .card .feature {
+  display: block;
+  padding: 20px;
+  border-top: 1px solid #b3b5c6;
+  width: 100%;
+}
+
+.pricing .card .feature:last-child {
+  border-bottom: 1px solid #b3b5c6;
+}
+/*# sourceMappingURL=main.css.map */
